@@ -1,10 +1,10 @@
 /* -- Blue
-Blue 0: #39D5FF
+Blue 0: #39D5FF  80% sat - #4dcaeb
 Blue 1: #29C5FF
 Blue 2: #19B5FE
 Blue 3: #22A7F0
 Blue 4: #1297E0
-Blue 5: #0287D0
+Blue 5: #0287D0  80% sat - #1581bd
 Blue 6: #0077C0
 Blue 7: #0067B0
 Blue 8: #0057A0
@@ -12,7 +12,6 @@ Blue 9: #004790
 Blue 10: #003780
 Blue 11: #102770
  */
-
 
 /* Paste in <head> of index.html */
 /* <link
@@ -29,8 +28,8 @@ Blue 11: #102770
 
 body {
   /* background color 0 */
-  background-color: #39D5FF;
-  font-family: "Oswald", sans-serif;
+  background-color: #4dcaeb;
+  font-family: "Roboto Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,11 +44,25 @@ h2,
 h3,
 h4 {
   font-weight: 400;
+  font-style: italic;
   text-align: center;
   /* color 11 */
-  color: white;
-  padding: 0;
-  margin: 5px;
+  color: #003780;
+  
+  /* margin: 5px; */
+}
+
+p {
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+  text-align: left;
+  line-height: 1.3em;
+  font-size: 1.15em;
+}
+
+a {
+  text-decoration: none;
 }
 
 .dark {
@@ -60,9 +73,9 @@ h4 {
 .container-outer {
   width: 30%;
   padding: 10px;
-  margin: 20px auto 10px;
+  margin: 0 auto;
   /* background color 5 */
-  background-color: #6c7a89;
+  background-color: #1581bd;
   border-radius: 5px;
 }
 
@@ -70,9 +83,19 @@ h4 {
   width: 85%;
   margin: 10px auto 5px;
   /* background color 2 */
-  background-color: #3c4a59;
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 30px 0 10px;
+  width: 50%;
+}
+
+.header img {
+  width: 50%;
 }
 
 /* Lists: */
@@ -146,19 +169,20 @@ td {
   text-align: left;
 }
 
-
 /* Button (General Use) */
 
 button {
-  background-color: #5c6a79;
+  background-color: #1581bd;
   color: white;
-  padding: 1px 10px;
+  padding: 3px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: "Oswald", sans-serif;
-  font-size: 0.9em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
   border-radius: 5px;
+  margin: 0 10px;
 }
 
 /* Form (General Use)*/
