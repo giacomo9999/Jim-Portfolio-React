@@ -7,9 +7,10 @@ class About extends Component {
         <h1>About Me</h1>
         <p>
           I build and design web apps. For twenty-five years, I've also been one
-          of America's best-loved editorial illustrators. (My portfolio for that
-          is at &nbsp; 
-          <a href="http://www.GiacomoMarchesi.com">GiacomoMarchesi.com</a>).
+          of America's best-loved editorial illustrators. (My portfolio for
+          <i>&nbsp;that&nbsp;</i>is at
+          <a href="http://www.GiacomoMarchesi.com">&nbsp;GiacomoMarchesi.com</a>
+          ).
         </p>
 
         <h2>Tel: 646.549.0648</h2>
@@ -24,7 +25,9 @@ class About extends Component {
         <div className="spacer10" />
         <button className="jg_button">View Resumé</button>
         <button className="jg_button">E-Mail Me</button>
-        <button className="jg_button">Close</button>
+        <button className="jg_button" onClick={this.props.closePanel}>
+          Close
+        </button>
       </div>
     );
   }

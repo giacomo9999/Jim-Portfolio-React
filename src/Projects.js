@@ -5,6 +5,9 @@ class Projects extends Component {
     return (
       <div className="container-inner">
         <h1>Projects</h1>
+        <button className="jg_button" onClick={this.props.closePanel}>
+          Close
+        </button>
         
       </div>
     );

@@ -1,22 +1,45 @@
-import React from "react";
+import React, { Component } from "react";
 import logo from "./JGary_logo.svg";
 import About from "./About";
 import Projects from "./Projects";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="header">
-        <img src={logo} className="logo" alt="logo" />
-      </div>
+class App extends Component {
+  state = { aboutPanelOpen: false, projectsPanelOpen: false };
 
-      <div className="container-outer">
-        <About />
-        <Projects/>
+  toggleAboutPanel = e => {
+    e.preventDefault();
+    console.log("Toggling About Panel");
+    this.setState({ aboutPanelOpen: !this.state.aboutPanelOpen });
+  };
+  toggleProjectsPanel = e => {
+    this.setState({ projectsPanelOpen: !this.state.projectsPanelOpen });
+  };
+
+  render() {
+    const isAboutOpen = this.state.aboutPanelOpen;
+    const isProjectsOpen = this.state.projectsPanelOpen;
+    return (
+      <div className="App">
+        <div className="header">
+          <img src={logo} className="logo" alt="logo" />
+        </div>
+
+        <div className="container-outer">
+          {isAboutOpen ? (
+            <About closePanel={this.toggleAboutPanel} />
+          ) : (
+            <button onClick={this.toggleAboutPanel}>About</button>
+          )}
+          {isProjectsOpen ? (
+            <Projects closePanel={this.toggleProjectsPanel}/>
+          ) : (
+            <button onClick={this.toggleProjectsPanel}>Projects</button>
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

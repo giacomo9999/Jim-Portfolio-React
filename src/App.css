@@ -48,11 +48,12 @@ h4 {
   text-align: center;
   /* color 11 */
   color: #003780;
-  
+
   /* margin: 5px; */
 }
 
 p {
+  letter-spacing: -0.5px;
   width: 90%;
   margin: 10px auto;
   padding: 8px;
