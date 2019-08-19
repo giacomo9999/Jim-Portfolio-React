@@ -39,27 +39,35 @@ body {
   height: 10px;
 }
 
+.spacer5 {
+  padding: 0;
+  height: 5px;
+}
+
 h1,
 h2,
 h3,
 h4 {
+  
   font-weight: 400;
-  font-style: italic;
-  text-align: center;
+  /* font-style: italic; */
   /* color 11 */
   color: #003780;
-
   /* margin: 5px; */
+  text-align: center;
 }
 
 p {
-  letter-spacing: -0.5px;
-  width: 90%;
-  margin: 10px auto;
-  padding: 8px;
   text-align: left;
+  letter-spacing: -0.5px;
   line-height: 1.3em;
   font-size: 1.15em;
+}
+
+.text-block {
+  width: 90%;
+  margin: 10px auto;
+  text-align: left;
 }
 
 a {
@@ -122,29 +130,6 @@ li {
 
 /* Tables: */
 
-/* table {
-  width: 50%;
-  background-color: white;
-  border-collapse: collapse;
-  width: 100%;
-  padding: 20px;
-}
-
-th {
-  font-weight: 500;
-  text-align: left;
-  padding: 4px;
-}
-
-td {
-  text-align: left;
-  padding: 4px;
-}
-
-tr:nth-child(even) {
-  background-color:  #C5D3E2;
-} */
-
 table {
   padding: 10px;
   margin: 10px auto 20px;
@@ -184,6 +169,17 @@ button {
   font-weight: 700;
   border-radius: 5px;
   margin: 0 10px;
+}
+
+button:hover {
+  background-color: #4dcaeb;
+  color: #0d3068;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Form (General Use)*/

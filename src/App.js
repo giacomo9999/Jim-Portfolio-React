@@ -3,6 +3,7 @@ import logo from "./JGary_logo.svg";
 import About from "./About";
 import Projects from "./Projects";
 import "./App.css";
+import "./media-queries.css";
 
 class App extends Component {
   state = { aboutPanelOpen: false, projectsPanelOpen: false };
@@ -29,12 +30,15 @@ class App extends Component {
           {isAboutOpen ? (
             <About closePanel={this.toggleAboutPanel} />
           ) : (
-            <button onClick={this.toggleAboutPanel}>About</button>
+            <button onClick={this.toggleAboutPanel}>About Me</button>
           )}
+          <div className="spacer10" />
           {isProjectsOpen ? (
-            <Projects closePanel={this.toggleProjectsPanel}/>
+            <Projects closePanel={this.toggleProjectsPanel} />
           ) : (
-            <button onClick={this.toggleProjectsPanel}>Projects</button>
+            <button onClick={this.toggleProjectsPanel}>
+              Toy Apps I've Built
+            </button>
           )}
         </div>
       </div>
