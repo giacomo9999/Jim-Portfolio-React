@@ -34,6 +34,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Set the background color of body to tan */
+body {
+  background-color: tan;
+}
+
+
+
 .spacer10 {
   padding: 0;
   height: 10px;

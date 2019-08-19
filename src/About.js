@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class About extends Component {
   render() {
+    const lightButton = { backgroundColor: "#003780" };
     return (
       <div className="container-inner">
         <div className="text-block">
@@ -17,7 +18,10 @@ class About extends Component {
             .)
           </p>
           <div className="spacer5" />
-          <p>I can be reached by phone at 646.549.0648, or by e-mail at the link below.</p>
+          <p>
+            I can be reached by phone at 646.549.0648, or by e-mail at the link
+            below.
+          </p>
         </div>
 
         {/* <input
@@ -28,10 +32,13 @@ class About extends Component {
             onclick="window.location.href='mailto:gmarchesi888@gmail.com'"
           /> */}
         {/* <a href="./J_Gary_CV_190430.pdf"> */}
+        <div className="spacer5" />
         <button>Resumé</button>
         <button>E-Mail Me</button>
         <button>LinkedIn</button>
-        <button onClick={this.props.closePanel}> Close</button>
+        <button onClick={this.props.closePanel} style={lightButton}>
+          Close
+        </button>
       </div>
     );
   }
