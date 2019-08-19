@@ -34,7 +34,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .spacer10 {
   padding: 0;
   height: 10px;
@@ -49,7 +48,6 @@ h1,
 h2,
 h3,
 h4 {
-  
   font-weight: 400;
   /* font-style: italic; */
   /* color 11 */
@@ -74,6 +72,11 @@ p {
 a {
   text-decoration: none;
 }
+
+/* a:visited {
+  text-decoration: none;
+  color: white;
+} */
 
 .dark {
   /* color 0 */

@@ -4,7 +4,6 @@ import About from "./About";
 import Projects from "./Projects";
 import "./App.css";
 import "./media-queries.css";
-// import "./m-queries2.css";
 
 class App extends Component {
   state = { aboutPanelOpen: false, projectsPanelOpen: false };

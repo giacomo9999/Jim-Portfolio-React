@@ -8,8 +8,15 @@
     width: 100%;
   }
 
+  button {
+    width: 100px;
+    font-size: 0.8em;
+    margin: 5px;
+  }
+
+
   .container-outer {
-    width: 35%;
+    width: 45%;
     margin: auto;
   }
 }
