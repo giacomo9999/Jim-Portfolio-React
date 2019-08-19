@@ -35,13 +35,6 @@ body {
 }
 
 
-/* Set the background color of body to tan */
-body {
-  background-color: tan;
-}
-
-
-
 .spacer10 {
   padding: 0;
   height: 10px;
@@ -97,7 +90,7 @@ a {
 }
 
 .container-inner {
-  width: 85%;
+  width: 90%;
   margin: 10px auto 5px;
   /* background color 2 */
   background-color: white;
