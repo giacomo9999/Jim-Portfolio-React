@@ -13,14 +13,15 @@ class ContactForm extends Component {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
     let templateParams = {
-      from_name: email,
+      from_name: name,
+      from_email: email,
       to_name: "gmarchesi888@gmail.com",
       subject: subject,
       message: message
     };
     emailjs.send(
       "mailjet",
-      "JG_Templ",
+      "jg_templ",
       templateParams,
       "user_b00FO4Wazqr0MmCjTatxl"
     );
