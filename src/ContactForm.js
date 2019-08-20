@@ -72,13 +72,14 @@ class ContactForm extends Component {
             onChange={this.handleChange}
           />
           <label className="h-label">Message</label>
-          <input
-            className="h-input"
+          <textarea
+            className="h-textarea"
             type="textarea"
             name="message"
             value={message}
             onChange={this.handleChange}
           />
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
