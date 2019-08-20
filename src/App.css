@@ -51,12 +51,13 @@ h4 {
   font-weight: 400;
   /* font-style: italic; */
   /* color 11 */
-  color: #003780;
+  color: #427aa9;
   /* margin: 5px; */
   text-align: center;
 }
 
 p {
+  color: #427aa9;
   text-align: left;
   letter-spacing: -0.5px;
   line-height: 1.3em;
@@ -84,12 +85,12 @@ a {
 }
 
 .container-outer {
-  width: 30%;
+  width: 25%;
   padding: 10px;
   margin: 0 auto;
   /* background color 5 */
   background-color: #1581bd;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .container-inner {
@@ -98,7 +99,7 @@ a {
   /* background color 2 */
   background-color: white;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .header {
@@ -176,7 +177,7 @@ button {
 }
 
 button:hover {
-  background-color: #4dcaeb;
+  background-color: #a0deee;
   color: #0d3068;
 }
 
@@ -189,7 +190,7 @@ button:active {
 /* Form (General Use)*/
 
 .h-form {
-  width: 50%;
+  width: 85%;
   margin: 25px auto;
   /* border color 9 */
   border: 1px solid #acbac9;
@@ -198,14 +199,16 @@ button:active {
 }
 
 .h-form .h-label {
+  color: #427aa9;
   display: block;
   padding: 7px;
   box-sizing: border-box;
   /* background color 8 */
-  background-color: #9caab9;
+  background-color: #a0deee;
 }
 
 .h-form .h-input {
+  font-family: "Roboto Condensed", sans-serif;
   display: block;
   width: 100%;
   box-sizing: border-box;

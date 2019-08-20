@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import ContactForm from "./ContactForm";
 
 class About extends Component {
   render() {
-    const lightButton = { backgroundColor: "#003780" };
+    const lightButton = { color:"#0057A0", backgroundColor: "#a0deee" };
     const inheritColor = { color: "inherit" };
     return (
       <div className="container-inner">
@@ -38,8 +39,10 @@ class About extends Component {
           </a>
         </button>
         <button onClick={this.props.closePanel} style={lightButton}>
-          Close
+          Close Panel
         </button>
+        <div className="spacer5" />
+        <ContactForm />
       </div>
     );
   }
