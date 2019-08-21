@@ -14,8 +14,12 @@
     margin: 5px;
   }
 
-
   .container-outer {
+    width: 45%;
+    margin: auto;
+  }
+
+  .container-invisible {
     width: 45%;
     margin: auto;
   }
@@ -39,6 +43,11 @@
   }
 
   .container-outer {
+    width: 85%;
+    margin: auto;
+  }
+
+  .container-invisible {
     width: 85%;
     margin: auto;
   }
@@ -67,6 +76,12 @@
   }
 
   .container-outer {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .container-invisible {
     width: 90%;
     padding: 10px;
     margin: 0 auto;

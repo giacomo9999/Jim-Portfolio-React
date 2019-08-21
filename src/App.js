@@ -26,7 +26,7 @@ class App extends Component {
           <img src={logo} className="logo" alt="logo" />
         </div>
 
-        <div className="container-outer">
+        <div className="container-invisible">
           {isAboutOpen ? (
             <About closePanel={this.toggleAboutPanel} />
           ) : (
