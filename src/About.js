@@ -14,6 +14,7 @@ class About extends Component {
     const isEmailOpen = this.state.emailPanelOpen;
     return (
       <div className="container-inner dark">
+        <h1 className="light">About Me</h1>
         <div className="container-inner">
           <div className="copy-block">
             <p>I build and design web apps. </p>

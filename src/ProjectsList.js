@@ -9,6 +9,7 @@ class ProjectsList extends Component {
     });
     return (
       <div className="container-inner dark">
+        <h1 className="light">Apps I've Built</h1>
         {projectsDisplay}
         <div className="spacer5" />
         <button className="jg_button" onClick={this.props.closePanel}>

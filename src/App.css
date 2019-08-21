@@ -29,7 +29,6 @@ Blue 11: #102770
 body {
   /* background color 0 */
   background-color: #6cb8d9;
-  /* background-color: #4dcaeb; */
   font-family: "Roboto Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,10 +49,7 @@ h2,
 h3,
 h4 {
   font-weight: 400;
-  /* font-style: italic; */
-  /* color 11 */
   color: #427aa9;
-  /* margin: 5px; */
   text-align: center;
 }
 
@@ -83,11 +79,6 @@ a {
   text-decoration: none;
   color: white;
 } */
-
-.dark {
-  /* color 0 */
-  color: #17a8ce;
-}
 
 .container-invisible {
   width: 25%;
@@ -125,7 +116,12 @@ a {
 
 .dark {
   /* color 0 */
+  color: #17a8ce;
   background-color: #1581bd;
+}
+
+.light {
+  color: #a3e4f5;
 }
 
 .header {
