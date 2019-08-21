@@ -23,7 +23,7 @@ class App extends Component {
         stack: "JavaScript, HTML/CSS.",
         url: "https://suspicious-ride-259d70.netlify.com/",
         gitHub:
-          "https://github.com/giacomo9999/Edgar-Allan-Poetry-Generator-190316I"
+          "https://github.com/giacomo9999/Edgar-Allan-Poetry-Generator-190316"
       },
       {
         name: "Cubical Tic-Tac-Toe (n x n x n)",
