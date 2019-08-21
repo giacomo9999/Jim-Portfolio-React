@@ -85,7 +85,7 @@ a {
   color: black;
 }
 
-.container-invisible{
+.container-invisible {
   width: 25%;
   padding: 10px;
   margin: 0 auto;
@@ -113,7 +113,6 @@ a {
   border-color: #d6f3fa;
   border-radius: 10px;
   border-width: 1px;
-  
 }
 
 .header {
@@ -177,21 +176,29 @@ td {
 /* Button (General Use) */
 
 button {
+  font-weight: 400;
   background-color: #2da0e0;
-  color: #d6f3fa;
+  color: white;
   padding: 3px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
-  font-weight: 700;
   border-style: solid;
   border-radius: 5px;
   border-width: 1px;
   border-color: #d6f3fa;
   margin: 0 10px;
   transition: 0.3s;
+}
+
+.big {
+  background-color: #1581bd;
+  font-size: 1.5em;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 button:hover {

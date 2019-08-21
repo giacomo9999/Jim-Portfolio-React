@@ -30,13 +30,13 @@ class App extends Component {
           {isAboutOpen ? (
             <About closePanel={this.toggleAboutPanel} />
           ) : (
-            <button onClick={this.toggleAboutPanel}>About Me</button>
+            <button className="big" onClick={this.toggleAboutPanel} >About Me</button>
           )}
           <div className="spacer10" />
           {isProjectsOpen ? (
             <Projects closePanel={this.toggleProjectsPanel} />
           ) : (
-            <button onClick={this.toggleProjectsPanel}>Apps I've Built</button>
+            <button className="big" onClick={this.toggleProjectsPanel}>Apps I've Built</button>
           )}
         </div>
       </div>
