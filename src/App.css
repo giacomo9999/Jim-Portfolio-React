@@ -165,7 +165,7 @@ td {
 
 button {
   background-color: #1581bd;
-  color: #baebf7;
+  color: #d6f3fa;
   padding: 3px 10px;
   text-align: center;
   text-decoration: none;
@@ -173,7 +173,10 @@ button {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
   font-weight: 700;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 5px;
+  border-color: #d6f3fa;
   margin: 0 10px;
   transition: 0.3s;
 }
