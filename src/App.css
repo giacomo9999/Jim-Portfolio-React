@@ -65,6 +65,10 @@ p {
   font-size: 1.15em;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .text-block {
   width: 90%;
   margin: 10px auto;
@@ -82,7 +86,7 @@ a {
 
 .dark {
   /* color 0 */
-  color: black;
+  color: #17a8ce;
 }
 
 .container-invisible {
@@ -113,6 +117,15 @@ a {
   border-color: #d6f3fa;
   border-radius: 10px;
   border-width: 1px;
+}
+
+.copy-block {
+  margin: 10px;
+}
+
+.dark {
+  /* color 0 */
+  background-color: #1581bd;
 }
 
 .header {
