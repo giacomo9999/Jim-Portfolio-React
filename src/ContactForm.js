@@ -32,7 +32,7 @@ class ContactForm extends Component {
     this.setState({
       name: "",
       email: "",
-      subject: "",
+      subject: "A Message To You JG",
       message: ""
     });
   };
@@ -80,7 +80,9 @@ class ContactForm extends Component {
             value={message}
             onChange={this.handleChange}
           />
+          <div className="spacer5" />
           <button type="submit">Submit</button>
+          <button onClick={this.props.closeEmailPanel}>Cancel</button>
         </form>
       </div>
     );

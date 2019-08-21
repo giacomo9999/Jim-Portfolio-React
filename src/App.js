@@ -36,9 +36,7 @@ class App extends Component {
           {isProjectsOpen ? (
             <Projects closePanel={this.toggleProjectsPanel} />
           ) : (
-            <button onClick={this.toggleProjectsPanel}>
-              Toy Apps I've Built
-            </button>
+            <button onClick={this.toggleProjectsPanel}>Apps I've Built</button>
           )}
         </div>
       </div>

@@ -28,7 +28,8 @@ Blue 11: #102770
 
 body {
   /* background color 0 */
-  background-color: #4dcaeb;
+  background-color: #6cb8d9;;
+  /* background-color: #4dcaeb; */
   font-family: "Roboto Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -164,7 +165,7 @@ td {
 
 button {
   background-color: #1581bd;
-  color: white;
+  color: #baebf7;
   padding: 3px 10px;
   text-align: center;
   text-decoration: none;
@@ -174,11 +175,12 @@ button {
   font-weight: 700;
   border-radius: 5px;
   margin: 0 10px;
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: #a0deee;
-  color: #0d3068;
+  color: white;
 }
 
 button:active {
@@ -191,11 +193,12 @@ button:active {
 
 .h-form {
   width: 85%;
-  margin: 25px auto;
+  margin: 0 auto;
   /* border color 9 */
   border: 1px solid #acbac9;
   padding: 15px;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .h-form .h-label {
@@ -227,6 +230,7 @@ button:active {
   padding: 4px 10px;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
+  transition: 0.3s;
 }
 
 .h-form .h-btn:hover {

@@ -1,10 +1,21 @@
 import React, { Component } from "react";
 import ContactForm from "./ContactForm";
+import Resume from "./J_Gary_CV_190430.pdf";
 
 class About extends Component {
+  state = { emailPanelOpen: false };
+
+  toggleEmailPanel = e => {
+    this.setState({ emailPanelOpen: !this.state.emailPanelOpen });
+  };
+
   render() {
-    const lightButton = { color:"#0057A0", backgroundColor: "#a0deee" };
+    const lightButton = {
+      color: "#0057A0",
+      backgroundColor: "#a0deee"
+    };
     const inheritColor = { color: "inherit" };
+    const isEmailOpen = this.state.emailPanelOpen;
     return (
       <div className="container-inner">
         <div className="text-block">
@@ -27,22 +38,38 @@ class About extends Component {
         </div>
 
         <div className="spacer5" />
-        <button>Resumé</button>
-        <button>Email me!</button>
-        <button>
-          {" "}
-          <a
-            href="https://www.linkedin.com/in/james-gary/"
-            style={inheritColor}
-          >
-            LinkedIn
-          </a>
-        </button>
-        <button onClick={this.props.closePanel} style={lightButton}>
-          Close Panel
-        </button>
+        <div className="button-row">
+          <button>
+            {" "}
+            <a
+              href={Resume}
+              rel="noopener noreferrer"
+              target="_blank"
+              style={inheritColor}
+            >
+              Resumé
+            </a>
+          </button>
+          <button onClick={this.toggleEmailPanel}>Email me!</button>
+          <button>
+            {" "}
+            <a
+              href="https://www.linkedin.com/in/james-gary/"
+              style={inheritColor}
+            >
+              LinkedIn
+            </a>
+          </button>
+        </div>
+        {isEmailOpen ? (
+          <ContactForm closeEmailPanel={this.toggleEmailPanel} />
+        ) : (
+          <div className="spacer10" />
+        )}
         <div className="spacer5" />
-        <ContactForm />
+
+        {/* <button onClick={this.props.closePanel} style={lightButton}> */}
+        <button onClick={this.props.closePanel}>Close Panel</button>
       </div>
     );
   }
